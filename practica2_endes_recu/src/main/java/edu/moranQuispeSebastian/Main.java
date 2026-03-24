@@ -1,10 +1,10 @@
 package edu.moranQuispeSebastian;
-import entities.alumno;
+import entities.Alumno;
 
 public class Main {
     public static void main(String[] args) {
 
-        alumno a = new alumno();
+        Alumno a = new Alumno();
         a.setNombre("Sebas");
         a.setApellido("Moran");
         a.setEdad(18);
@@ -25,9 +25,9 @@ public class Main {
 
     // Metodo para saber si el alumno es menor o mayor e edad
 
-        boolean mayorDeEdad = alumno.mayorDeEdad(a.getEdad());
+        boolean mayorDeEdad = Alumno.mayorDeEdad(a.getEdad());
 
-        double imc = alumno.imc(a.getPeso(), a.getAltura());
+        double imc = Alumno.imc(a.getPeso(), a.getAltura());
         System.out.println("IMC:" + imc);
 
     }

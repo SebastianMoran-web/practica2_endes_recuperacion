@@ -1,6 +1,6 @@
 package entities;
 
-public class alumno {
+public class Alumno {
 
     private String nombre;
     private String apellido;
@@ -13,7 +13,7 @@ public class alumno {
 
     // constructor sin atributos
 
-    public alumno() {
+    public Alumno() {
 
         this.nombre = "Sin nombre";
         this.apellido = "Sin apellido";
@@ -27,7 +27,7 @@ public class alumno {
 
     //constructor con los atributos
 
-    public alumno(String nombre, String apellido, int edad, String grado, String nacionalidad, String email, double peso, double altura) {
+    public Alumno(String nombre, String apellido, int edad, String grado, String nacionalidad, String email, double peso, double altura) {
 
         this.nombre = nombre;
         this.apellido = apellido;
