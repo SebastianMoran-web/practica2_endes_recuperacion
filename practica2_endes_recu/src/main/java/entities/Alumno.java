@@ -107,7 +107,7 @@ public class Alumno {
             System.out.println("El alumno es mayor de edad");
             return true;
         }else{
-            System.out.println("El alumno es mayor de edad");
+            System.out.println("El alumno es menor de edad");
             return false;
         }
     }
