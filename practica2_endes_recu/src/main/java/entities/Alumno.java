@@ -27,7 +27,7 @@ public class Alumno {
 
     //constructor con los atributos
 
-    public Alumno(String nombre, String apellido, int edad, String grado, String nacionalidad, String email, double peso, double altura) {
+    public Alumno (String nombre, String apellido, int edad, String grado, String nacionalidad, String email, double peso, double altura) {
 
         this.nombre = nombre;
         this.apellido = apellido;
@@ -108,11 +108,11 @@ public class Alumno {
             return true;
         }else{
             System.out.println("El alumno es menor de edad");
-            return false;
+           return false;
         }
     }
 
-    public static double imc(double peso, double altura){
+    public static double imc (double peso, double altura){
 
         if ( altura <= 0) return 0;
         return peso / (altura * altura);

@@ -8,7 +8,7 @@ public class Main {
         a.setNombre("Sebas");
         a.setApellido("Moran");
         a.setEdad(18);
-        a.setGrado("Drado Superior de DAW");
+        a.setGrado("Grado Superior de DAW");
         a.setNacionalidad("Española");
         a.setEmail("moransebas72@gmail.com");
         a.setPeso(102.00);
@@ -23,7 +23,7 @@ public class Main {
     System.out.println("Peso:" + a.getPeso() + " Kilogramos");
     System.out.println("Altura:" + a.getAltura() + " Metros");
 
-    // Metodo para saber si el alumno es menor o mayor e edad
+    // Método para saber si el alumno es menor o mayor e edad
 
         boolean mayorDeEdad = Alumno.mayorDeEdad(a.getEdad());
 
