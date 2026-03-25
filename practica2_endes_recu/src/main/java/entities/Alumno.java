@@ -1,5 +1,15 @@
 package entities;
 
+/**
+ * Clase que representa los datos personales de un alumno
+ * Se usaran para métodos estaticos para sacar el IRC del alumno y si es mayor de edad
+ */
+
+
+
+
+
+
 public class Alumno {
 
     private String nombre;
@@ -11,7 +21,7 @@ public class Alumno {
     private double peso;
     private double altura;
 
-    // constructor sin atributos
+    // Constructor por defecto
 
     public Alumno() {
 
@@ -25,9 +35,10 @@ public class Alumno {
         this.altura = 0.0;
     }
 
-    //constructor con los atributos
+    //Constructor con los atributos
 
     public Alumno (String nombre, String apellido, int edad, String grado, String nacionalidad, String email, double peso, double altura) {
+
 
         this.nombre = nombre;
         this.apellido = apellido;
@@ -100,8 +111,13 @@ public class Alumno {
     }
 
 
-    //metodos static que son saber si es mayor de edad y el IMC del alumno
-
+    /**
+     * Metodo boolean que indica si al alumno se le puede considerar mayor o menor de edad
+     * Se decide mediante un if, si es mayor o igual a 18 el sistema dira que es mayor de edad
+     * si no dira que es menor de edad
+     * @param edad
+     * @return
+     */
     public static boolean mayorDeEdad(int edad){
         if (edad >= 18) {
             System.out.println("El alumno es mayor de edad");
@@ -112,6 +128,14 @@ public class Alumno {
         }
     }
 
+    /**
+     * Es un método para calcular el IRC  de un alumno
+     * se contiene un if para evitar que no se divida entre 0 y se rompa el codigo
+     * despues el método devuelve el resultado
+     * @param peso
+     * @param altura
+     * @return
+     */
     public static double imc (double peso, double altura){
 
         if ( altura <= 0) return 0;

@@ -1,7 +1,20 @@
 package edu.moranQuispeSebastian;
 import entities.Alumno;
 
+
+/**
+ *Clase principal donde se pueden ver el uso de los getters y los setters
+ * y como usa la información dada en los métodos estaticos
+ */
+
 public class Main {
+
+    /**
+     * Es el punto de inicio de ejecución del código
+     * el resultado será una recopilación de la información dada y con los resultados
+     * de los métodos estaticos
+     * @param args
+     */
     public static void main(String[] args) {
 
         Alumno a = new Alumno();
@@ -27,6 +40,8 @@ public class Main {
 
         boolean mayorDeEdad = Alumno.mayorDeEdad(a.getEdad());
 
+
+     // Método para calcular el IMC
         double imc = Alumno.imc(a.getPeso(), a.getAltura());
         System.out.println("IMC:" + imc);
 
